@@ -169,7 +169,7 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * Portfolio isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -178,9 +178,9 @@
         itemSelector: '.portfolio-item'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#portfolio-filters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-filters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');

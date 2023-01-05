@@ -1,0 +1,98 @@
+$white: #fff;
+$dark_1: #111;
+$dark_2: #011426;
+$dark_3: #272829;
+$primary: #0563bb;
+$blue_1: #067ded;
+$blue_2: #148af9;
+$blue_3: #47aeff;
+$dark_gray: #45505b;
+$light_gray: #728394;
+$color_10: #ffa76e;
+$red: #e80368;
+$yellow: #ffbb2c;
+$orange: #ff5828;
+$color_14: #11dbcf;
+$color_16: #999;
+$color_17: #90c8fc;
+$font-family_1: 'Open Sans', sans-serif;
+$font-family_2: 'Raleway', sans-serif;
+$font-family_3: 'Poppins', sans-serif;
+$border-top-color_2: #eee;
+
+/**
+* Template Name: MyResume - v4.7.0
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+body {
+    font-family: $font-family_1;
+    color: $dark_3;
+}
+a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+        color: $blue_1;
+        text-decoration: none;
+    }
+}
+h1 {
+    font-family: $font-family_2;
+}
+h2 {
+    font-family: $font-family_2;
+}
+h3 {
+    font-family: $font-family_2;
+}
+h4 {
+    font-family: $font-family_2;
+}
+h5 {
+    font-family: $font-family_2;
+}
+h6 {
+    font-family: $font-family_2;
+}
+

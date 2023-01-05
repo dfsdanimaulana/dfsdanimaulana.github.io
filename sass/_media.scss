@@ -1,0 +1,58 @@
+@use 'base' as *;
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+@media (max-width: 992px) {
+    #header {
+        width: 300px;
+        background: #fff;
+        border-right: 1px solid #e6e9ec;
+        left: -300px;
+    }
+    #hero {
+        text-align: center;
+        h1 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    #main {
+        margin-left: 100px;
+    }
+    .nav-menu {
+        a {
+            width: 56px;
+            &:focus {
+                width: 56px;
+                span {
+                    display: none;
+                    color: $white;
+                }
+            }
+            span {
+                display: none;
+                color: $white;
+            }
+        }
+    }
+    #hero {
+        padding-left: 160px;
+    }
+    .testimonials {
+        .testimonial-item {
+            p {
+                width: 80%;
+            }
+        }
+    }
+}

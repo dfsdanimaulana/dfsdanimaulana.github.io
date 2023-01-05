@@ -1,0 +1,61 @@
+@use 'base' as *;
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #0563bb;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    i {
+        font-size: 28px;
+        color: $white;
+        line-height: 0;
+    }
+    &:hover {
+        background: #0678e3;
+        color: $white;
+    }
+}
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+    &:before {
+        content: '';
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #0563bb;
+        border-top-color: $white;
+        border-bottom-color: $white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: animate-preloader 1s linear infinite;
+        animation: animate-preloader 1s linear infinite;
+    }
+}
