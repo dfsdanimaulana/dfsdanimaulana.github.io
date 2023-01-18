@@ -80,7 +80,7 @@
         }
         &:hover {
             color: $white;
-            background: #0563bb;
+            background: $primary;
             width: 100%;
             color: $white;
             span {
@@ -91,10 +91,10 @@
     }
     .active {
         color: $white;
-        background: #0563bb;
+        background: $primary;
         &:focus {
             color: $white;
-            background: #0563bb;
+            background: $primary;
             span {
                 color: $white;
             }
@@ -107,7 +107,7 @@
         &:hover {
             > a {
                 color: $white;
-                background: #0563bb;
+                background: $primary;
                 width: 100%;
                 color: $white;
                 span {
@@ -211,6 +211,7 @@
 section {
     padding: 60px 0;
     overflow: hidden;
+    min-height: 100vh;
 }
 .section-title {
     text-align: center;
@@ -239,7 +240,7 @@ section {
             display: block;
             width: 40px;
             height: 3px;
-            background: #0563bb;
+            background: $primary;
             bottom: 0;
             left: calc(50% - 20px);
         }
@@ -253,6 +254,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
+    display: grid;
+    place-items: center;
     .content {
         h3 {
             font-weight: 700;
@@ -295,14 +298,14 @@ section {
         width: 100%;
         position: relative;
         text-align: center;
-        background: #fff;
+        background: $white;
         i {
             position: absolute;
             top: -25px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 24px;
-            background: #0563bb;
+            background: $primary;
             color: $white;
             border-radius: 50px;
             display: inline-flex;
@@ -330,6 +333,8 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills {
+    display: grid;
+    place-items: center;
     .progress {
         height: 60px;
         display: block;
@@ -374,7 +379,7 @@ section {
     .resume-item {
         padding: 0 0 20px 20px;
         margin-top: -2px;
-        border-left: 2px solid #0563bb;
+        border-left: 2px solid $primary;
         position: relative;
         h4 {
             line-height: 18px;
@@ -410,8 +415,8 @@ section {
             border-radius: 50px;
             left: -9px;
             top: 0;
-            background: #fff;
-            border: 2px solid #0563bb;
+            background: $white;
+            border: 2px solid $primary;
         }
     }
 }
@@ -428,7 +433,7 @@ section {
         margin: 0 auto 25px auto;
         list-style: none;
         text-align: center;
-        background: #fff;
+        background: $white;
         border-radius: 50px;
         padding: 2px 15px;
         li {
@@ -578,7 +583,7 @@ section {
                 height: 12px;
                 background-color: $white;
                 opacity: 1;
-                border: 1px solid #0563bb;
+                border: 1px solid $primary;
             }
             .swiper-pagination-bullet-active {
                 background-color: $primary;
@@ -629,7 +634,7 @@ section {
         text-align: center;
         padding: 70px 20px 80px 20px;
         transition: all ease-in-out 0.3s;
-        background: #fff;
+        background: $white;
         box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
         .icon {
             margin: 0 auto;
@@ -784,7 +789,7 @@ section {
         .testimonial-img {
             width: 120px;
             border-radius: 50%;
-            border: 4px solid #fff;
+            border: 4px solid $white;
             margin: 0 auto;
         }
         h3 {
@@ -826,7 +831,7 @@ section {
             height: 12px;
             background-color: $white;
             opacity: 1;
-            border: 1px solid #0563bb;
+            border: 1px solid $primary;
         }
         .swiper-pagination-bullet-active {
             background-color: $primary;
@@ -840,7 +845,7 @@ section {
 .contact {
     .info {
         width: 100%;
-        background: #fff;
+        background: $white;
         i {
             font-size: 20px;
             color: $primary;
@@ -871,7 +876,7 @@ section {
             margin-top: 40px;
             &:hover {
                 i {
-                    background: #0563bb;
+                    background: $primary;
                     color: $white;
                 }
             }
@@ -880,7 +885,7 @@ section {
             margin-top: 40px;
             &:hover {
                 i {
-                    background: #0563bb;
+                    background: $primary;
                     color: $white;
                 }
             }
@@ -888,7 +893,7 @@ section {
         .address {
             &:hover {
                 i {
-                    background: #0563bb;
+                    background: $primary;
                     color: $white;
                 }
             }
@@ -896,7 +901,7 @@ section {
     }
     .php-email-form {
         width: 100%;
-        background: #fff;
+        background: $white;
         .form-group {
             padding-bottom: 8px;
         }
@@ -925,7 +930,7 @@ section {
         }
         .loading {
             display: none;
-            background: #fff;
+            background: $white;
             text-align: center;
             padding: 15px;
             &:before {
@@ -954,14 +959,14 @@ section {
             padding: 10px 12px;
         }
         button[type='submit'] {
-            background: #0563bb;
+            background: $primary;
             border: 0;
             padding: 10px 35px;
             color: $white;
             transition: 0.4s;
             border-radius: 50px;
             &:hover {
-                background: #0678e3;
+                background: $blue_4;
             }
         }
     }
@@ -1007,7 +1012,7 @@ section {
             height: 36px;
             transition: 0.3s;
             &:hover {
-                background: #0678e3;
+                background: $blue_4;
                 color: $white;
                 text-decoration: none;
             }

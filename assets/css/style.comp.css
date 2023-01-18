@@ -344,6 +344,7 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .section-title {
@@ -386,6 +387,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  display: grid;
+  place-items: center;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -455,6 +460,10 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills {
+  display: grid;
+  place-items: center;
+}
 .skills .progress {
   height: 60px;
   display: block;

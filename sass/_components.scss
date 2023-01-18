@@ -11,7 +11,7 @@
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #0563bb;
+    background: $primary;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -22,7 +22,7 @@
         line-height: 0;
     }
     &:hover {
-        background: #0678e3;
+        background: $blue_4;
         color: $white;
     }
 }
@@ -43,13 +43,13 @@
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #fff;
+    background: $white;
     &:before {
         content: '';
         position: fixed;
         top: calc(50% - 30px);
         left: calc(50% - 30px);
-        border: 6px solid #0563bb;
+        border: 6px solid $primary;
         border-top-color: $white;
         border-bottom-color: $white;
         border-radius: 50%;
