@@ -1,0 +1,39 @@
+@use '../base' as *;
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+    display: grid;
+    place-items: center;
+    .content {
+        h3 {
+            font-weight: 700;
+            font-size: 26px;
+            color: $light_gray;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+            }
+            strong {
+                margin-right: 10px;
+            }
+            i {
+                font-size: 16px;
+                margin-right: 5px;
+                color: $primary;
+                line-height: 0;
+            }
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
