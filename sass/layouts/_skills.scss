@@ -6,32 +6,30 @@
 .skills {
     display: grid;
     place-items: center;
-    .progress {
-        height: 60px;
-        display: block;
-        background: none;
-        border-radius: 0;
-        .skill {
-            padding: 10px 0;
-            margin: 0;
-            text-transform: uppercase;
-            display: block;
-            font-weight: 600;
-            font-family: $font-family_3;
-            color: $dark_gray;
-            .val {
-                float: right;
-                font-style: normal;
-            }
+
+    &-content {
+        div {
+            display: grid;
+            grid-template-areas:
+                'logo name'
+                'logo link';
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
         }
-    }
-    .progress-bar-wrap {
-        background: #f2f3f5;
-    }
-    .progress-bar {
-        width: 1px;
-        height: 10px;
-        transition: 0.9s;
-        background-color: $primary;
+        &-logo {
+            display: grid;
+            place-items: center;
+            grid-area: logo;
+            padding: 1.5em;
+        }
+        &-name {
+            grid-area: name;
+            align-self: end;
+            font-size: large;
+        }
+        &-link {
+            grid-area: link;
+            font-size: small;
+        }
     }
 }
