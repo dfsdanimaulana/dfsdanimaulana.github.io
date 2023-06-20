@@ -10,7 +10,7 @@
         "compile:sass": "sass sass/main.scss assets/css/style.comp.css",
         "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' assets/css/style.comp.css -o assets/css/style.prefix.css",
         "compress:css": "sass assets/css/style.prefix.css assets/css/style.min.css --style=compressed",
-        "build:css": "npm-run-all compile:sass prefix:css compress:css"
+        "build": "npm-run-all compile:sass prefix:css compress:css"
     },
     "repository": {
         "type": "git",

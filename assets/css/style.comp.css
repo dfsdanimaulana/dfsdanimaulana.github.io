@@ -193,7 +193,7 @@ h6 {
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-.contact .info h4 {
+.contact .info h5 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -407,13 +407,13 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg_cleanup.jpg") top right no-repeat;
+  background: url("../img/bg_bggenerator_com.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(299deg, transparent 0%, rgba(255, 255, 255, 0.55) 62%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -992,33 +992,27 @@ section {
   display: grid;
   place-items: center;
 }
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills-content div {
+  display: grid;
+  grid-template-areas: "logo name" "logo link";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
 }
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
+.skills-content-logo {
+  font-size: larger;
+  display: grid;
+  place-items: center;
+  grid-area: logo;
+  padding: 1.5em;
 }
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills-content-name {
+  grid-area: name;
+  align-self: end;
+  font-size: large;
 }
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
+.skills-content-link {
+  grid-area: link;
+  font-size: small;
 }
 
 /*--------------------------------------------------------------
