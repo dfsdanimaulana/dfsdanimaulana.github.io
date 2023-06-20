@@ -407,7 +407,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg.jpg") top right no-repeat;
+  background: url("../img/bg_bggenerator_com.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -995,10 +995,11 @@ section {
 .skills-content div {
   display: grid;
   grid-template-areas: "logo name" "logo link";
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
 }
 .skills-content-logo {
+  font-size: larger;
   display: grid;
   place-items: center;
   grid-area: logo;
